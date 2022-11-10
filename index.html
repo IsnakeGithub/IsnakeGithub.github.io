@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆页面</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/Thesquid.ink-Free-Flat-Sample-Space-rocket.ico">
+    <!--一个图标库的样式-->
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--引入bootstrap的样式文件-->
+    <link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<div id="login-box">
+    <h1>Login</h1>
+    <div class="form">
+        <div class="item">
+            <!-- <i></i>呈现修饰为斜体 -->
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            <input type="text" placeholder="Username" class="uname" value="" id="uuname">
+        </div>
+        <div class="item">
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <!--placeholder 文本框里面的提示 -->
+            <input type="password" placeholder="Password" class="pass">
+        </div>
+        <button class="submit">Login</button>
+    </div>
+</div>
+<script>
+    //1.获取元素
+    let uname = document.querySelector(".uname");
+    let passwd = document.querySelector('.pass');
+    let submit = document.querySelector('.submit');
+    //2.注册事件
+    let test_name = 'admin';
+    let test_pass = '123456';
+    submit.onclick = function () {
+        if (uname.value == test_name && passwd.value == test_pass){
+            window.location.href="class_list.html";
+        }else {
+            alert('不知道密码瞎登录！！');
+            uname.value='';
+            passwd.value='';
+        }
+    }
+</script>
+
+</body>
+</html>

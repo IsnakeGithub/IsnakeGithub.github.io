@@ -1,0 +1,74 @@
+body{
+    background: url("../images/pink.jpg");
+    background-size: 100% auto;
+    /*背景图片不重复*/
+    background-repeat: no-repeat;
+}
+#login-box{
+    width: 500px;
+    height: auto;
+    border: 1px  #000000;
+    /*外边距居中*/
+    margin:0px auto;
+    /*外边距距离上面的距离为250px*/
+    margin-top: 250px;
+    /*文本居中*/
+    text-align: center;
+    background: #00000050;
+    /*增加内边距大小*/
+    padding: 50px 50px;
+}
+/*后代选择器*/
+#login-box .form{
+    margin-top: 50px;
+}
+#login-box h1{
+   color: white;
+}
+
+#login-box .form .item{
+    margin-top:15px ;
+}
+#login-box .form .item i{
+    font-size: 18px;
+    color: white;
+}
+#login-box .form .item input{
+    border: 0px;
+    /*文本框的颜色*/
+    border-bottom: 2px solid #ffffff;
+    padding: 5px 20px;
+    /*让文本的颜色变成透明色*/
+    background: #ffffff00;
+    /*字体颜色变成白色*/
+    color: #ffffff;
+    font-size: 18px;
+    /*边框样式设置为不显示*/
+    outline: none;
+}
+/*#login-box .form .item input[type="text"]{*/
+    /*border-color: white;*/
+/*}*/
+#login-box .form .item input:hover{
+    border-bottom-color: #43e97b;
+}
+#login-box button{
+     margin-top: 15px;
+    width: 170px;
+    height: 30px;
+    font-size: 20px;
+    /*字体大小*/
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient(-225deg, #db3125 0%, #7C64D5 48%, #578bc3 100%);
+    border: none;
+    border-style: none;
+    /*圆角边框变成15像素*/
+    border-radius:15px ;
+    /*边框样式设置为不显示*/
+    outline: none;
+}
+/*伪类选择器*/
+#login-box  button:hover{
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%) !important;
+}
